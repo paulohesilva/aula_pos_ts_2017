@@ -1,0 +1,28 @@
+#/d = numero
+#/w* = Diferente de número
+
+# Comum à Todos
+# ("","","") = Exception
+# ("/d","","") = Exception
+# ("","/d","") = Exception
+# ("","","/d") = Exception
+# ("/d","/d","") = Exception
+# ("","/d","/d") = Exception
+# ("/d","","/d") = Exception
+
+# ("/w*","","") = Exception
+# ("","/w*","") = Exception
+# ("","","/w*") = Exception
+
+#Equilátero
+
+#(x,x,x) = Equilátero
+#tal que x > 0
+
+#Isósceles
+(x,y,x)  = Isósceles
+tal que x+x > y
+
+#Escaleno
+#(x,y,z) = Isósceles
+#tal que x + y > z ou x+z > y ou y+z > x
