@@ -1,15 +1,13 @@
 package exercicio3;
 
-import static org.junit.Assert.*;
-
-import javax.swing.plaf.synth.SynthSeparatorUI;
+import static org.junit.Assert.assertEquals;
 
 import org.joda.time.DateTime;
 import org.joda.time.IllegalFieldValueException;
 import org.joda.time.Interval;
 import org.joda.time.LocalDate;
-import org.joda.time.LocalDateTime;
 import org.joda.time.LocalTime;
+import org.joda.time.Period;
 import org.junit.Test;
 
 public class TestesExercicio3 {
@@ -58,9 +56,8 @@ public class TestesExercicio3 {
 		DateTime trintaEUm = new DateTime(2017,3,31,18,30);
 		DateTime seisDeCinco = new DateTime(2017,5,6,18,30);
 		Interval interval = new Interval(trintaEUm, seisDeCinco);
-		assertEquals(864, interval.toPeriod().getHours());
+		Period period = new Period(interval.toDurationMillis());
+		assertEquals(864, period.getHours());
 	}
-	
-//	31/03 18:30 e 06/05 18:30
 	
 }
