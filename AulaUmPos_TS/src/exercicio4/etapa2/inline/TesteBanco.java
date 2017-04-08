@@ -1,4 +1,4 @@
-package br.ufsc.ine.leb.sistemaBancario.experimento.etapa1.inline;
+package exercicio4.etapa2.inline;
 
 import static org.junit.Assert.assertEquals;
 
