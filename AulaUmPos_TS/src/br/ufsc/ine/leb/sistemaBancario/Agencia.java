@@ -1,4 +1,4 @@
-//package br.ufsc.ine.leb.sistemaBancario;
+package br.ufsc.ine.leb.sistemaBancario;
 
 import java.util.LinkedList;
 import java.util.List;
