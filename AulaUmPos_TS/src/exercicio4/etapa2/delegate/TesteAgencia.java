@@ -6,12 +6,14 @@ import org.junit.Test;
 
 import br.ufsc.ine.leb.sistemaBancario.Agencia;
 import br.ufsc.ine.leb.sistemaBancario.Banco;
-import br.ufsc.ine.leb.sistemaBancario.experimento.etapa1.delegate.Auxiliar;
+import br.ufsc.ine.leb.sistemaBancario.Moeda;
 
 public class TesteAgencia {
 
 	@Test
 	public void caixaEconomicaTrindade() throws Exception {
+		Banco caixaEconomica = Auxiliar.getBanco("Caixa Econômica",Moeda.BRL);
+		Agencia caixaEconomicaTrindade = Auxiliar.getAgencia(caixaEconomica,"Trindade");
 		assertEquals("001", caixaEconomicaTrindade.obterIdentificador());
 		assertEquals("Trindade", caixaEconomicaTrindade.obterNome());
 		assertEquals(caixaEconomica, caixaEconomicaTrindade.obterBanco());
